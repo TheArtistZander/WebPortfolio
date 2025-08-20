@@ -6,6 +6,28 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="canvas.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    .hero-image {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px;
+      padding: 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      .hero-image {
+        max-height: 300px;
+        border-radius: 5px;
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -22,6 +44,9 @@
     </header>
 
     <main>
+  <div class="image-container">
+    <img src="me.jpg" alt="Descriptive Alt Text" class="hero-image">
+  </div>
         <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
