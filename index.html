@@ -6,28 +6,30 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="canvas.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
+<style>
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    max-width: 800px; /* Optional: limits size on large screens */
+  }
+
+  .image-container {
+    text-align: center;
+    margin: 20px;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 600px) {
     .hero-image {
-      width: 100%;
-      height: auto;
-      max-height: 500px;
-      object-fit: cover;
-      border-radius: 10px;
+      border-radius: 5px;
+      max-width: 100%;
     }
+  }
+</style>
 
-    .image-container {
-      text-align: center;
-      margin: 20px;
-      padding: 0 10px;
-    }
-
-    @media (max-width: 600px) {
-      .hero-image {
-        max-height: 300px;
-        border-radius: 5px;
-      }
-    }
-  </style>
 </head>
 <body>
     <header>
